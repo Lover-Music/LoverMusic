@@ -49,7 +49,7 @@ packages(){
 			pprint "SUCCESS.\n\n" "cgreen"
 		else
 			pprint "FAIL.\n\n" "cred"
-			pprint "You need to install ffmpeg manually in order to use YukkiMusicBot, exiting..\n" "cblue"
+			pprint "You need to install ffmpeg manually in order to use LoverMusic, exiting..\n" "cblue"
 			exit 1
 		fi
 	fi
@@ -72,8 +72,8 @@ node(){
 
 repo(){
 	# Get git repo if the installer is runned standalone
-	[[ ! "YukkiMusicBot" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
-	git clone https://github.com/notreallyshikhar/YukkiMusicBot &&  cd YukkiMusicBot
+	[[ ! "LoverMusic" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
+	git clone https://github.com/Lover-Music/LoverMusic &&  cd LoverMusic
 }
 
 
@@ -100,7 +100,7 @@ packages
 node
 repo
 installation
-pprint "\n\n\n\n\nYukki Music Bot Installation Completed!" "cgreen"
+pprint "\n\n\n\n\nLover Music Installation Completed!" "cgreen"
 sleep 4
 clear
 
