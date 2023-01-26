@@ -70,7 +70,7 @@
       },      
       "START_IMG_URL": {
         "description": "Telegraph Image URL For Start Command",
-        "value": "https://telegra.ph/file/e17f42bc195635b668d6d.jpg",
+        "value": "https://telegra.ph/file/a62273c43c95ad07ada61.jpg",
         "required": true
       }
     },
