@@ -50,9 +50,9 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Yukki.start()
+    await Lover.start()
     try:
-        await Yukki.stream_call(
+        await Lover.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
@@ -63,7 +63,7 @@ async def init():
     except:
         pass
     await Lover.decorators()
-    LOGGER("LoverMusic").info("Yukki Music Bot Started Successfully")
+    LOGGER("LoverMusic").info("Lover Music Bot Started Successfully")
     await idle()
 
 
