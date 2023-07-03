@@ -6,37 +6,24 @@ from dotenv import load_dotenv
 from pyrogram import filters
 
 load_dotenv()
- 
-API_ID = int(getenv("API_ID", ""))
+
+API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 
 BOT_TOKEN = getenv("BOT_TOKEN")
- 
+
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "『˹𝑳𝒐𝒗𝒆𝒓 ✘ ℳ𝓾𝓼𝓲c‌˼』")
 
-DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "60")
-) 
+OWNER_ID = list(map(int, getenv("OWNER_ID", "1548904516").split()))
 
+HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
-)
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","SiestaXMusic")
-
-OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
-)  
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
-
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
-
-UPSTREAM_REPO = "https://github.com/Lover-Music/LoverMusic"
-UPSTREAM_BRANCH = "master"
-
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Lover-Music/shubhamm")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
-
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False").capitalize()
 
 AUTO_LEAVE_ASSISTANT_TIME = int(
