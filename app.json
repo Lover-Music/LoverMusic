@@ -1,17 +1,16 @@
 {
-    "name": "Lover Music",
-    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Links.",
-    "logo": "https://telegra.ph/file/a62273c43c95ad07ada61.jpg",
+    "name": "『˹𝑳𝒐𝒗𝒆𝒓 ✘ ℳ𝓾𝓼𝓲c‌˼』",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://telegra.ph/file/56d1760224589ee370186.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Lover",
-    "LoverMusic",
+    "AnonX",
+    "MusicBot",
     "telegram-bot",
     "pyrogram"
     ],
-    "stack": "container",
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
@@ -22,11 +21,6 @@
         "description": "Get this value from https://my.telegram.org",
         "value": "",
         "required": true
-      },      
-      "AUTO_LEAVING_ASSISTANT": {
-        "description": "True If you want your assistant to leave all chats automatically after some time.",
-        "value": "False",
-        "required": false
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
@@ -34,13 +28,13 @@
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Lover's database for you.",
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
         "value": "",
-        "required": false
+        "required": true
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. Please don't use ascii characters",
-        "value": "",
+        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
+        "value": "『˹𝑳𝒐𝒗𝒆𝒓 ✘ ℳ𝓾𝓼𝓲c‌˼』",
         "required": true
       },
       "OWNER_ID": {
@@ -64,13 +58,8 @@
         "required": false
       },
       "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
         "value": "",
-        "required": true
-      },      
-      "START_IMG_URL": {
-        "description": "Telegraph Image URL For Start Command",
-        "value": "https://telegra.ph/file/a62273c43c95ad07ada61.jpg",
         "required": true
       }
     },
@@ -85,11 +74,5 @@
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
-      "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "free"
-          }
-      },
       "stack": "container"
 }
